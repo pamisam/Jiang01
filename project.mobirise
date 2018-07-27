@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "name": "莊子.逍遙遊（上）聯合報 蔣勳 ",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": 4.25,
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "siteFonts": [],
+    "versionFirst": "4.7.8",
+    "uniqCompNum": 2,
+    "versionPublish": "4.7.8",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            ".card-title": {
+              "color": "#232323"
+            },
+            "P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>蔣勳／莊子，你好：逍遙遊（上）</b> &nbsp; <br><b>2018/07/23  聯合報 蔣勳 &nbsp;&nbsp;</b><br><br><b>夢想變成鳥飛起來的大魚</b><br><br><b><br></b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>&nbsp; &nbsp; &nbsp; &nbsp;讀《莊子》，沒有人不記得，在北方荒涼的大海裡那條孤獨的大魚。\n莊子說：「北冥有魚，其名為鯤。」\n<br>莊子是善於說故事的人，他的故事是神話，是寓言，像今天的魔幻文學，充滿想像力，充滿好奇，充滿活潑的畫面。\n<br>&nbsp; &nbsp; &nbsp; &nbsp;幸好有莊子，一個民族的文化不會讓人沉悶無趣到昏昏欲睡。\n<br>青年的時候，厭煩了學校千篇一律的死板教科書，常常要偷偷翻開《莊子》。翻開第一頁，那一頁就說了一個簡單的故事：無邊無際的北方海洋裡，一條叫作「鯤」的大魚，不知道為什麼，不想做魚了。牠想化身成一隻鳥，牠想飛起來。\n<br>我那時理解的「北冥」或「北溟」就是「北方海洋」。現在讀，好像也還有當年文青的感動，我如果是一條魚，可以夢想成為一隻鳥嗎？在寒涼寂寞的北冥，天長地久，我可以夢想飛起來嗎？我可以夢想向南方明亮的陽光飛去嗎？\n<br>我感謝莊子，在那個苦悶孤寂的年代，藉著他的故事，我可以作夢，在荒涼孤寂的歲月，有了飛起來的狂妄夢想。\n<br>我童年住在台北孔廟附近，常到廟裡玩，但是害怕廟裡一排一排聖賢嚴肅陰沉的牌位。我常常想逃到莊子的故事裡，看大魚化身為鵬，看那條大魚的廣闊的背，莊子說「不知其幾千里也」。這麼廣大的魚的背脊，遠遠望去，像一座島嶼吧，像我在飛機上看到的我的島嶼，在太平洋的波濤中，像魚背一樣寬闊巨大。牠，也有飛起來的夢想嗎？&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            島嶼有許多「鯤鯓」\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>我在島嶼旅行，有很多地名叫「鯤鯓」，讓我想起《莊子‧逍遙遊》一開始談到的「鯤」。\n<br>據說，「鯤」是鯨魚。島嶼長長的，萬頃波濤，遠遠看，像一條魚伏在大海裡，露出突起的背部，因此古代有人就把島嶼叫作「鯤島」。一直到現在，島嶼的南部還有許多地名叫「鯤鯓」。「鯤鯓」太多，難以分辨，就排列出秩序。\n</b><br><b>光台南一地，就有七個鯤鯓。一鯤鯓就是現在安平所在的位置，二鯤鯓在億載金城，三鯤鯓在安平對岸，四鯤鯓又叫下鯤鯓。好像有許多巨大的鯨魚一一排開，從一排到了七。七鯤鯓，有人認為已經排到台南高雄交界的茄萣去了。鯤鯓太多，照例就有爭議，五、六、七，這幾個鯤鯓地位就都不確定。吵來吵去，也有人煩了，乾脆就用其他地名代替，不再沾「鯤鯓」的光了。\n</b><br><b>有的鯤鯓不用數字排行，我去過「南鯤鯓」，那裡有彩色華麗的王爺廟，上個世紀七◯年代，王爺廟前的一個乩童名叫洪通，成為著名畫家，登上國際新聞。\n<br>洪通不識字，沒有受任何正規教育，不受教科書拘束。他寫字畫畫，寫的字像道士畫的符，他的畫也自由、活潑，充滿色彩的生命力。\n</b><br><b>台南還有青鯤鯓，在台南將軍區。這裡還有用「鯤鯓」命名的國小，有用「鯤鯓」命名的警察局。最有趣的是，這個地區還有兩個里用「鯤」這個字命名，一個叫「鯤鯓里」，一個叫「鯤溟里」。「鯤」和「溟」都是《莊子‧逍遙遊》一開始說到的。帶著《莊子》在島嶼旅行，讀〈逍遙遊〉，好像是神話，卻又一下子變成了現實世界。\n</b><br><b>在「鯤鯓」、「鯤溟」兩個里中間走一走，望著西邊大海波濤裡一個連一個的凸起沙洲，如灰青色魚背一般，浮游在波濤中，恍惚間，覺得莊子是不是來過？</b></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>在這些叫「鯤鯓」的地方寫他的〈逍遙遊〉，一開始就說：「北冥有魚，其名為鯤。</b>」&nbsp;</h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>的確，「鯤」這條巨大無比的魚，是住在北溟。「北冥有魚」我一直理解成很荒漠寒冷的北極海洋。當然，考證癖的大學教授立刻會糾正你——「莊子沒有可能去過北極」。《莊子》不能考證，最好也不能讓大學教授注解，一考證一注解，《莊子》就死翹翹了。注解疏證太多，鯤會死在北溟，鯤無法變成鵬</b>，<b>鵬也飛不起來，鯤養在小魚缸裡，鵬囚禁在鳥籠中，翅翼張不開，牠們都只有供人玩賞餵食，奄奄一息。 \n<br>還是應該到北溟去走走，沒有人類去過的北溟，沒有人類的足跡，遼闊空寂，一片白茫茫。無邊無際的冰雪，巨大茫昧，無始無終的白色海洋，沒有歲月，沒有生命的記憶，沒有誕生，也沒有死亡。 \n</b><br><b>那條孤獨的魚，在波濤裡生存了多久？沒有記載，沒有人知道。那條魚的故事，不屬於歷史，歷史只是人類造作，人類的歷史時間太短，歷史之前是漫長的神話。那條魚是神話時間裡的魚，鯤鯓，牠有了身體，憂傷的身體，牠在無始無終的時間裡冥想：能不能沒有這個身體？ \n<br>好幾億年的這個身體，牠厭煩了，牠想離開這個身體，牠望著無邊無際的空白，牠想飛起來。牠想了好幾億年，牠鼓動鰓，牠嘗試搧動自己的鰭，牠的鰭鬣立了起來，高高的鰭鬣，像一座山，搧動、搧動。也許，好幾千萬年過去，好幾億年過去，牠的鰭，一段一段，在搧動的風裡慢慢變成了巨大的翅翼。鰭翅的軟骨演化成羽翼。牠努力振動鰭翅，在北溟的狂風裡呼嘯，牠搧動新演化成的翅翼，有一種狂喜吧。 \n</b><br><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qZ0u5icv0F",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features4-0"
+        },
+        {
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-box": {
+              "background-color": "@cardsBg",
+              "padding": "2rem"
+            },
+            "h4": {
+              "font-weight": "500",
+              "margin-bottom": "0",
+              "text-align": "left"
+            },
+            "p": {
+              "color": "#767676",
+              "text-align": "left"
+            },
+            ".card-wrapper": {
+              "position": "relative",
+              "box-shadow": "0px 0px 0px 0px rgba(0, 0, 0, 0)",
+              "transition": "box-shadow 0.3s",
+              "&:hover": {
+                "box-shadow": "0px 0px 30px 0px rgba(0, 0, 0, 0.05)",
+                "transition": "box-shadow 0.3s"
+              }
+            },
+            ".card-img": {
+              "position": "absolute",
+              "top": "0",
+              "left": "0",
+              "width": "100%",
+              "overflow": "hidden"
+            },
+            ".card-title": {
+              "color": "#232323"
+            },
+            "B": {
+              "color": "#232323"
+            },
+            "P": {
+              "color": "#232323"
+            }
+          },
+          "_name": "features4",
+          "_customHTML": "<section class=\"features4\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n        \n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"color\" title=\"Cards Bg\" name=\"cardsBg\" value=\"#ffffff\">\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n            <option value=\"4\">4</option>\n        </select>\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/img/02.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#f9f9f9\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cebfaf\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>     \n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"media-container-row\" mbr-cards=\"bootstrap\">\n            <div class=\"card p-3 col-12 col-md-6\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            「怒而飛」，莊子只用了三個字，敘述魚飛起來的情景。\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>「怒」是心事的激動吧。雲和冰雪的海濤翻湧起來，牠一振翅，就彷彿海嘯，滔天的冰雪譁然，天空彷彿被劈開來一片金色的光，那條魚飛了起來，變成了一隻翱翔空中的大鳥。「其翼若垂天之雲」，我每每看天空的雲發呆，想起剛剛飛起來的大鵬鳥。那些雲是牠搧動時落下的羽毛，天空留下長雲，牠要向南飛去了。 \n<br>那是莊子說的第一個故事，一個叫作「逍遙」的故事。 \n<br>莊子說：這故事不是他胡說的，是《齊諧》裡記載的，《齊諧》是什麼書？「志（誌）怪者也」，專門記錄怪事情的書，像《哈利波特》吧，或者像《魔戒》。莊子不喜歡一本正經，他喜歡這些奇怪的書，他引用的《齊諧》，像是一本魔幻的書，但是文字很美。 \n<br>莊子引用了一段文字，《齊諧》描述鯤變化成鵬，鵬飛起來了，要往南方飛：「鵬之徙於南冥也，水擊三千里，摶扶搖而上者九萬里。」好美的文字，「三千里」、「九萬里」都只是無限大的想像，無限的空間，無限的時間，無限的速度。「扶搖直上」已經成為家喻戶曉的成語，依靠風，依靠空氣，扶扶搖搖，就可以飛起來。 \n<br>我喜歡「摶」這個字，是一個動詞，揉麵、揉土是「摶」，鳥振翅在氣流裡的飛翔旋轉也是「摶」。「摶」像是內在生命能量慢慢生發的狀態，像一種氣的運動，像武功高手的蓄勢待發。 \n<br>這樣飛起來的大鵬，一飛就飛了六個月。 \n</b><br><b>兩千多年過去了，我們還是很難想像，一次長達六個月的飛行。 \n<br>古老神話裡都夢想過飛，幻想過飛，嫦娥的飛，Icarus的飛，孤獨的飛，墜落毀滅的飛，夢想、幻想都被嘲笑過，然而人類真的飛起來</b></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6 col-12 col-md-6\" mbr-if=\"cardsAmount > 1\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            古希臘神話Icarus用蠟黏合的翅膀飛向太陽，他最終墜落殞亡，卻紀念著人類數千年飛翔的夢想，現代街頭塗鴉還在歌頌著飛起來的夢，如同莊子〈逍遙遊〉裡努力飛起來的一條魚。</b><br><br><b>\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>古希臘的Icarus用脆弱的翅翼飛向陽光，他的墜落紀念著所有飛翔的夢，兩千年來西方藝術一直歌頌這位悲劇英雄，他一定了解莊子飛起來的夢想吧？仰望夜空，我們或許還可以夢想，穿過星空，會有一次長達六個月的飛行。\n<br>莊子一定相信，有一天夢想可以成真。\n<br>他說的「逍遙」是心靈的自由，是創造性的自由，不被客觀現實綑綁，不被成見拘束，你想從魚變鳥，你想飛，你就成就了「逍遙」。「逍遙」就是：你可以是魚，你也可以是鳥。你可以是鯤，你也可以是鵬。你可以在水裡游，你也可以在空中飛。「逍遙」是領悟自己可以是你嚮往的自己，嚮往了幾億年，水中游動的鰭鬣會變成空中搧動的翅翼。\n<br>逍遙是徹底的心靈的自由。\n<br>看到羨慕的生活，我們說：好逍遙。我們一定知道「逍遙」的意思吧。\n<br>你相信嗎？莊子說的「鯤」的故事，是一個荒誕的神話，或者他在講述關於他觀察到的自然生態的演變進化？\n<br>我喜歡莊子的故事，天馬行空，雖然後世學者注解來注解去，把活生生一尾巨大的「鯤鯓」肢解虐殺到支離破碎。那一匹行空的天馬，加了皮革籠頭，黃金嚼齒，繫上了錦繡鞍驏，釘上馬蹄鐵，為人所奴役驅使，早已奄奄一息，牠嘯叫狂嘶，到最後，連一點反抗掙扎的憤怒都沒有了，如何「逍遙」？\n<br>我青年時讀《莊子》，常常無端想哭，坐在面對浩瀚汪洋大海的鯤鯓上，想起曾經有過的那巨大的「北冥」，無邊無際，想起北溟裡優游自在的鯤，岸上的人遠遠觀望，只是青黑色一線，忽起忽落，有時像圓圓的頭，有時是厚厚的背脊，有時如山一般立起來，彷彿是牠張開的鰭鬣，真的像山一樣。岸上的人驚慌奔跑，因為太陽被遮蔽了，鰭鬣像大大的網，像幕幔，像垂天之雲，遮蔽了日光。&nbsp;</b><br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 2\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>\n                            關於水窪裡的芥子\n                        </b></h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\"><b>莊子很用心觀察自然。\n<br>他彷彿總是從人群中走出去，在天遼地闊的場域冥想宇宙。他觀察風，觀察空氣。絕對的孤獨，產生純粹的思辨，他說：獨與天地精神往來。莊子的「獨」是徹底絕對的孤獨。跟大風對話，跟空氣對話，跟塵埃對話，跟生物的氣息對話，他解脫了「人」的許多偏見，回到自然的原點，還原生命最初的本質。\n<br>我喜歡他觀察天的顏色，他用了「蒼蒼」兩個字。民歌裡有「天蒼蒼」，也有「蒹葭蒼蒼」，民間也用「白髮蒼蒼」。「蒼蒼」不像是視覺上的顏色。「蒼蒼」常常和「茫茫」用在一起——「天蒼蒼，野茫茫」，蒼蒼茫茫，不是確定的顏色，是視覺極限的渺茫浩瀚吧。正是莊子在〈逍遙遊〉裡說的「其遠而無所至極邪」，無窮無盡的「遠」，無法用人類距離測量的「遠」，眺望太空的蒼茫，不是顏色，其實是虛空無盡。\n<br>莊子給了一個文化思考「遠」的哲學，使後代的繪畫放棄了色彩模擬，用單一色系的墨不斷渲染，理解了更深層次上「蒼蒼」的意義。他在孤獨裡如此看大，看遠，看近，也看小。細微短暫的生命，無窮無盡的生命，都在時間和空間裡存在著。\n<br>他在一間土坯屋子裡觀看地上小小凹下的水窪，他把一粒芥子放進水窪裡，看小小的芥菜種子，優游水上，像一艘船。他知道，如果放一個杯子在水窪裡，就要擱淺停滯了。\n<br>他像一名有耐心的物理學家，反覆實驗，反覆練習，大和小，遠和近，漂浮和沉滯，飛翔和降落—— 從小水窪負載的種子，到「九萬里則風斯在下」的大鵬鳥，他又回到可以一飛六個月不停息的飛行的夢。他說了物理的觀察：「風之積也不厚，則其負大翼也無力。」他在觀察飛行，觀察飛翔中羽翼和氣流的關係。\n<br>莊子留下許多自然科學的發人深省的智慧，把它限定在做人的「退讓」、「周到」，是太鄉愿平庸的看法吧。\n<br>這個民族，要如何擺脫唯唯諾諾的做人，能真正走出去，孤獨地與自然對話，跟日月對話，跟天地對話，可以高高飛起來，「九萬里風斯在下」，飛到那樣雲霄高處，會不會多一點生命的奇險與驚嘆？\n<br>俞大綱老師在一九七六年送我一部《莊子》，是嚴復注解的。嚴復從英國學海洋軍事回中國，他看到歐洲強權「船堅炮利」背後，真正應該學習的，是向大自然挑戰的孤獨精神，他翻譯了《天演論》，也用《天演論》的觀點重新詮釋《莊子》，讓《莊子》擺脫上千年來「隱世」、「消極」哲學的誤解，發揚《莊子》觀察自然、探究自然的正面意義。\n<br>「背負青天」是那隻飛起來的大鵬鳥在九萬里高空御風而行的美麗畫面，像是莊子為人類早早勾畫了航向外太空雄心壯志的預言。（上）\n<br></b>\n<br></p>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card p-3 col-12 col-md-6\" mbr-if=\"cardsAmount > 3\" mbr-class=\"{'col-lg-3': cardsAmount == '4',\n                             'col-lg-4': cardsAmount == '3'}\">\n                <div class=\"card-wrapper media-container-row\">\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title pb-3 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            Unlimited Sites\n                        </h4>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\">\n                            Mobirise gives you the freedom to develop as many websites as you like given the fact that it is a desktop app.\n                        </p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "qZ0wRTR244",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "features4-1"
+        }
+      ]
+    }
+  }
+}
